@@ -1,0 +1,231 @@
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*main tag divides into two equal parts*/
+    width: 80vw;
+    height: auto;
+    background-image: linear-gradient(45deg, #0f0e0e, #9b0202);
+    /*gradient colour for background*/
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+.head {
+    color: white;
+    width: 50%;
+}
+
+.profile-img {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    margin-right: 16rem;
+}
+
+.content form {
+    background-color: white;
+    width: 50%;
+    border-radius: 3px;
+    /*for curve of edge*/
+}
+
+.block {
+    display: flex;
+    /*for sets flexibility */
+    justify-content: center;
+}
+
+.analytics {
+    background-color: #333333;
+    width: 80% !important;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.s {
+    font-weight: bold;
+}
+
+#agent,
+#merchant {
+    width: 37%;
+    border: solid 1px black;
+}
+
+.main {
+    display: flex;
+    /*for sets flexibility of main tag*/
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.form {
+    background-color: gainsboro;
+    flex: 1;
+    /* Form takes up 50% of container */
+    height: 100%;
+    border-radius: 20px
+}
+
+.term {
+    padding: 2rem;
+    margin: 2rem;
+}
+
+#create {
+    /* Make the button a block-level element */
+    margin: 0 auto;
+    /* Center the button horizontally */
+    padding: 0px 0px;
+    /* Add padding for spacing and comfort */
+    font-size: 1.6rem;
+    /* Set the font size */
+    background-color: #ff5b13;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
+    border: none;
+    /* Remove the button border */
+    border-radius: 8px;
+    /* Add border-radius for rounded corners */
+    cursor: pointer;
+    text-align: center;
+    /* Center the text within the button */
+    width: 50%;
+}
+
+#create2 {
+    /* Make the button a block-level element */
+    margin: 0 auto;
+    /* Center the button horizontally */
+    padding: 0px 0px;
+    /* Add padding for spacing and comfort */
+    font-size: 1.6rem;
+    /* Set the font size */
+    background-color: #ff5b13;
+    /* Button background color */
+    color: #fff;
+    /* Button text color */
+    border: none;
+    /* Remove the button border */
+    border-radius: 8px;
+    /* Add border-radius for rounded corners */
+    cursor: pointer;
+    text-align: center;
+    /* Center the text within the button */
+    width: 50%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    /* Default background color */
+    color: #000;
+    /* Default text color */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* Button styles for the :active state (when clicked) */
+
+.btn:active {
+    background-color: black;
+    /* Background color when active */
+    color: white;
+    /* Text color when active */
+}
+
+label,
+h1 {
+    color: black;
+}
+
+@media screen and (max-width:1200px) {
+    .main {
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+        /* Reverse the order for mobile view */
+    }
+    .form {
+        height: auto;
+        flex: 50%;
+        width: 100vw;
+    }
+    .head {
+        width: 100%;
+        height: 50%;
+        padding: 12rem;
+    }
+    .abc {
+        margin-top: 100%;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .main {
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+        /* Reverse the order for mobile view */
+    }
+    .form {
+        height: auto;
+        flex: 50%;
+        width: 100vw;
+    }
+    .head {
+        width: 100%;
+        height: 50%;
+    }
+    .abc {
+        margin-top: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+        /* Reverse the order for mobile view */
+    }
+    .form {
+        height: auto;
+        flex: 50%;
+        width: 100vw;
+    }
+    .carousel {
+        position: absolute;
+        margin-left: -13rem !important;
+    }
+    .abc {
+        margin-top: 100%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .main {
+        width: 100vw;
+        height: auto;
+        flex-direction: column;
+        /* Reverse the order for mobile view */
+    }
+    .form {
+        height: auto;
+        flex: 50%;
+        width: 100vw;
+    }
+    .abc {
+        margin-top: 100%;
+    }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Page</title>
+    <!--BOOTSTRAP LIBRARIES-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-image: url(image2.jpg);">
+    <!--MAIN DIV -->
+    <div class="main">
+        <div class="head" align="center">
+            <div class="abc">
+                <h3>Manage your Money<br>Anywhere</h3>
+                <p>View all the analytics and grow your business from anywhere!</p>
+            </div>
+            <br>
+            <br>
+            <!--carousel-->
+            <div class="container">
+                <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+                    <ul class="carousel-indicators" style="margin-bottom: -5rem !important;">
+                        <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#imageCarousel" data-slide-to="1"></li>
+                        <li data-target="#imageCarousel" data-slide-to="2"></li>
+                    </ul>
+                    <!--text written in carousel-->
+                    <div class="carousel-inner" style="margin-left: 10%;">
+                        <div class="carousel-item active analytics">
+                            <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, vero? Aut laboriosam nulla beatae quidem animi nostrum.</p>
+                            <div style="display: flex;">
+                                <img src="profile1.jpg" alt="My Profile Image" class="profile-img">
+                                <p style="margin-left: -15rem;">Vikas</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item analytics">
+                            <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, vero? Aut laboriosam nulla beatae quidem animi nostrum.</p>
+                            <div style="display: flex;">
+                                <img src="profile2.jpg" alt="My Profile Image" class="profile-img">
+                                <p style="margin-left: -15rem;">Aman</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item analytics">
+                            <p align="justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, vero? Aut laboriosam nulla beatae quidem animi nostrum.</p>
+                            <div style="display: flex;">
+                                <img src="profile3.jpg" alt="My Profile Image" class="profile-img">
+                                <p style="margin-left: -15rem;">Sumit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--form div tag-->
+        <div class="content form" style="background-color: white;" align="center">
+            <!--heading tag-->
+            <div class="term">
+                <h1>Create an account</h1>
+                <!--button tag used for merchant and agent-->
+                <div class="mb-3">
+                    <button id="merchant" type="button" class="btn btn-dark">
+                    <i class="bi bi-shop"></i> Merchant
+                </button>
+                    <button id="agent" type="button" class="btn btn-dark">
+                    <i class="bi bi-person-circle"></i> Agent
+                </button>
+                </div>
+
+                <form action="" id="merchantForm" class="login-form" style="width: 100% !important; display: none;">
+                    <!--input tag for full name-->
+                    <div class="mb-3 w-75">
+                        <input type="text" id="fullName" class="form-control" placeholder="First Name">
+                    </div>
+                    <!--select tag for company location-->
+                    <div class="w-75">
+                        <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example" id="companyLocation" style="width: 100% !important;">
+                        <option selected><b>Where is your company based?</b></option>
+                        <option value="1">Delhi</option>
+                        <option value="2">Gururgram</option>
+                        <option value="3">Noida</option>
+                    </select>
+                    </div>
+                    <!--input tag for email-->
+                    <div class="mb-3 w-75">
+                        <input type="email" class="form-control" placeholder="Business E-mail" id="businessEmail">
+                    </div>
+                    <!--select tag for industry-->
+                    <div class="w-75">
+                        <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example" id="industry" style="width: 100% !important;">
+                        <option selected><b>
+                            Please select an industry
+                        </b></option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    </div>
+                    <!--input tag for phone number-->
+                    <div class="mb-3 w-75">
+                        <input type="number" class="form-control" placeholder="Phone number" id="phoneNumber">
+                    </div>
+                    <!--input tag for password-->
+                    <div class="mb-3 w-75">
+                        <input type="password" class="form-control" placeholder="Password" id="password">
+                    </div>
+                    <!--checkbox for privacy check-->
+                    <div class="mb-3 w-75">
+                        <input type="checkbox" name="" id="PrivacyPolicy">
+                        <label for="remember-me">I accept the Privacy Policy</label>
+                    </div>
+                    <!--button tag for create an account-->
+                    <button id="create" type="button">Create an Account</button>
+                </form>
+
+
+                <form action="" id="agentForm" class="login-form" style="width: 100% !important; display: none;">
+                    <!--input tag for full name-->
+                    <div class="mb-3 w-75">
+                        <input type="text" id="fullName2" class="form-control" placeholder="First Name">
+                    </div>
+                    <!--input tag for email-->
+                    <div class="mb-3 w-75">
+                        <input type="email" class="form-control" placeholder="Business E-mail" id="businessEmail2">
+                    </div>
+                    <!--select tag for industry-->
+
+                    <!--input tag for phone number-->
+                    <div class="mb-3 w-75">
+                        <input type="number" class="form-control" placeholder="Phone number" id="phoneNumber2">
+                    </div>
+                    <!--input tag for password-->
+                    <div class="mb-3 w-75">
+                        <input type="password" class="form-control" placeholder="Password" id="password2">
+                    </div>
+                    <!--checkbox for privacy check-->
+                    <div class="mb-3 w-75">
+                        <input type="checkbox" name="" id="PrivacyPolicy2">
+                        <label for="remember-me">I accept the Privacy Policy</label>
+                    </div>
+                    <!--button tag for create an account-->
+                    <button id="create2" type="button">Create an Account</button>
+
+                </form>
+
+            </div>
+            <div class="mb-3 w-75">
+                <label for="remember-me">Already have an account</label>
+                <i class="fa fa-sign-in fa-xs" style="color: #000;"> Login</i>
+            </div>
+        </div>
+    </div>
+
+    <!--Script link-->
+    <script src="index.js"></script>
+</body>
+
+</html>
